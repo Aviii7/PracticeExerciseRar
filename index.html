@@ -4,8 +4,29 @@
       
     </head>
     <body>
+      <button onclick="myFunc()">Press me!</button>
+      <p id="pythagorean"></p>
+      <button onclick="yourFunc()">Press me!</button>
+      <p id="cosine"></p>
+      <p id="sine"></p>
       <script>
-        
+        function myFunc() {
+          let a = prompt("Enter the value for a: ");
+          let b = prompt("Enter the value for b: ");
+          let c = Math.SQRT2((parseInt(a) ** 2) + (parseInt(b) ** 2));
+          
+          document.getElementById.innerHTML("pythagorean") = c;
+        }
+        function yourFunc() {
+          const PI = 3.14;
+          let a = prompt("Enter a number: ");
+          let b = parseInt(a) * (180 / PI);
+          let cosB = Math.cos(b);
+          let sinB = Math.sin(b);
+
+          document.getElementById.innerHTML("cosine") = cosB;
+          document.getElementById.innerHTML("sine") = sinB;
+        }
       </script>
     </body>
   </html>
