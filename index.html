@@ -21,11 +21,9 @@
           const PI = 3.14;
           let a = prompt("Enter a number: ");
           let b = parseInt(a) * PI / 180;
-          let cosB = Math.cos(b);
-          let sinB = Math.sin(b);
 
-          document.getElementById("cosine").innerHTML = cosB;
-          document.getElementById("sine").innerHTML = sinB;
+          document.getElementById("cosine").innerHTML = Math.cos(b);
+          document.getElementById("sine").innerHTML = Math.sin(b);
         }
       </script>
     </body>
